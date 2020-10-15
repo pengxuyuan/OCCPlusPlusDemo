@@ -22,6 +22,7 @@
     void *targetOCObject = (__bridge void*)interface;
     
     GlobleOCTargetObserverCPlusPlus = targetOCObject;
+    GlobleTargetCallFunction = interface.call;
     NSLog(@"targetOCObject %@",targetOCObject);
     NSLog(@"GlobleOCTargetObserverCPlusPlus %@",GlobleOCTargetObserverCPlusPlus);
 }

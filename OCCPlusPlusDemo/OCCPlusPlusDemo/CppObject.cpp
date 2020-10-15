@@ -7,6 +7,9 @@
 
 #include "CppObject.hpp"
 
+void *GlobleOCTargetObserverCPlusPlus = NULL;
+CPlusPlusCallOCFunction GlobleTargetCallFunction = NULL;
+
 void CppObject::ConfigOCCommunicationObject(void *ocObject, CPlusPlusCallOCFunction callFunction) {
     targetOCObject = ocObject;
     targetCallFunction = callFunction;
@@ -19,12 +22,7 @@ void CppObject::ExampleMethod(const std::string& str){
     std::string str1 = "ExampleMethod";
     void *param = &str1;
     enum CPlusPlusCallOCFunctionActionType actionType = ActionTypeExampleMethod;
-    
-    if (targetOCObject == NULL) {
-        targetOCObject = GlobleOCTargetObserverCPlusPlus;
-    }
-    
-    targetCallFunction(targetOCObject, actionType, param);
+    GlobleTargetCallFunction(GlobleOCTargetObserverCPlusPlus, actionType, param);
 };
 
 void CppObject::ExampleMethod1(const std::string& str){
@@ -34,10 +32,7 @@ void CppObject::ExampleMethod1(const std::string& str){
     std::string str1 = "ExampleMethod1";
     void *param = &str1;
     enum CPlusPlusCallOCFunctionActionType actionType = ActionTypeExampleMethod1;
-    if (targetOCObject == NULL) {
-        targetOCObject = GlobleOCTargetObserverCPlusPlus;
-    }
-    targetCallFunction(targetOCObject, actionType, param);
+    GlobleTargetCallFunction(GlobleOCTargetObserverCPlusPlus, actionType, param);
 };
 
 
@@ -48,10 +43,7 @@ void CppObject::ExampleMethod2(const std::string& str){
     std::string str1 = "ExampleMethod2";
     void *param = &str1;
     enum CPlusPlusCallOCFunctionActionType actionType = ActionTypeExampleMethod2;
-    if (targetOCObject == NULL) {
-        targetOCObject = GlobleOCTargetObserverCPlusPlus;
-    }
-    targetCallFunction(targetOCObject, actionType, param);
+    GlobleTargetCallFunction(GlobleOCTargetObserverCPlusPlus, actionType, param);
 };
 
 

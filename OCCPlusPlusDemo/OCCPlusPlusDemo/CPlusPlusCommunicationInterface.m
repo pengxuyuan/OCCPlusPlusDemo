@@ -19,6 +19,15 @@ void HandleCPlusPlusEvent(void *target, enum CPlusPlusCallOCFunctionActionType a
 
 @implementation CPlusPlusCommunicationInterface
 
++ (instancetype)sharedInstance {
+    static dispatch_once_t onceToken;
+    static CPlusPlusCommunicationInterface *instance;
+    dispatch_once(&onceToken, ^{
+        instance = [CPlusPlusCommunicationInterface new];
+    });
+    return instance;
+}
+
 - (instancetype)init
 {
     self = [super init];
@@ -26,6 +35,10 @@ void HandleCPlusPlusEvent(void *target, enum CPlusPlusCallOCFunctionActionType a
         _call = HandleCPlusPlusEvent;
     }
     return self;
+}
+
+- (void)dealloc {
+    NSLog(@"__FUNCTION__");
 }
 
 

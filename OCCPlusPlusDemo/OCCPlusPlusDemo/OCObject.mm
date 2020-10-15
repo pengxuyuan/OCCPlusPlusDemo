@@ -24,10 +24,10 @@
     if (self) {
         wrapped = new CppObject();
         
-        interface = [CPlusPlusCommunicationInterface new];
-        void *targetOCObject = (__bridge void*)interface;
-        
-        wrapped->ConfigOCCommunicationObject(targetOCObject, interface.call);
+//        interface = [CPlusPlusCommunicationInterface new];
+//        void *targetOCObject = (__bridge void*)interface;
+//        
+//        wrapped->ConfigOCCommunicationObject(targetOCObject, interface.call);
     }
     return self;
 }

@@ -7,6 +7,7 @@
 
 #import "ViewController.h"
 #import "OCObject.h"
+#import "OCCPlusPlusBridge.h"
 
 @interface ViewController ()
 
@@ -20,7 +21,9 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    NSLog(@"GlobleOCTargetObserverCPlusPlus:%@",GlobleOCTargetObserverCPlusPlus);
     [[OCObject new] exampleMethodWithString:@"AAA"];
+    
 }
 
 

@@ -18,6 +18,7 @@
 		E61D18B02535985E00FFB5C2 /* OCCPlusPlusDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E61D18AF2535985E00FFB5C2 /* OCCPlusPlusDemoUITests.m */; };
 		E61D19C92535D68800FFB5C2 /* CppObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E61D19C72535D68800FFB5C2 /* CppObject.cpp */; };
 		E61D19D22535DA8300FFB5C2 /* OCObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = E61D19D12535DA8300FFB5C2 /* OCObject.mm */; };
+		E66BCA892537EE5A000F96A8 /* CPlusPlusCommunicationInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = E66BCA882537EE5A000F96A8 /* CPlusPlusCommunicationInterface.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,9 @@
 		E61D19C82535D68800FFB5C2 /* CppObject.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CppObject.hpp; sourceTree = "<group>"; };
 		E61D19D02535DA8300FFB5C2 /* OCObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCObject.h; sourceTree = "<group>"; };
 		E61D19D12535DA8300FFB5C2 /* OCObject.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OCObject.mm; sourceTree = "<group>"; };
+		E66BCA862537EC7A000F96A8 /* OCCPlusPlusBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCCPlusPlusBridge.h; sourceTree = "<group>"; };
+		E66BCA872537EE5A000F96A8 /* CPlusPlusCommunicationInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPlusPlusCommunicationInterface.h; sourceTree = "<group>"; };
+		E66BCA882537EE5A000F96A8 /* CPlusPlusCommunicationInterface.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPlusPlusCommunicationInterface.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +129,9 @@
 				E61D18962535985D00FFB5C2 /* LaunchScreen.storyboard */,
 				E61D18992535985D00FFB5C2 /* Info.plist */,
 				E61D189A2535985D00FFB5C2 /* main.m */,
+				E66BCA862537EC7A000F96A8 /* OCCPlusPlusBridge.h */,
+				E66BCA872537EE5A000F96A8 /* CPlusPlusCommunicationInterface.h */,
+				E66BCA882537EE5A000F96A8 /* CPlusPlusCommunicationInterface.m */,
 			);
 			path = OCCPlusPlusDemo;
 			sourceTree = "<group>";
@@ -280,6 +287,7 @@
 				E61D188A2535985D00FFB5C2 /* AppDelegate.m in Sources */,
 				E61D19D22535DA8300FFB5C2 /* OCObject.mm in Sources */,
 				E61D19C92535D68800FFB5C2 /* CppObject.cpp in Sources */,
+				E66BCA892537EE5A000F96A8 /* CPlusPlusCommunicationInterface.m in Sources */,
 				E61D189B2535985D00FFB5C2 /* main.m in Sources */,
 				E61D188D2535985D00FFB5C2 /* SceneDelegate.m in Sources */,
 			);
